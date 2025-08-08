@@ -14,11 +14,15 @@ document.addEventListener("DOMContentLoaded", () => {
     return number1 / number2;
   }
   function getNum1() {
-    let number1 = Number(document.getElementById("number1_input").value);
+    let number1 = Number(
+      parseFloat(document.getElementById("number1_input").value)
+    );
     return number1;
   }
   function getNum2() {
-    let number1 = Number(document.getElementById("number2_input").value);
+    let number1 = Number(
+      parseFloat(document.getElementById("number2_input").value)
+    );
     return number1;
   }
   const add = document.getElementById("add");
